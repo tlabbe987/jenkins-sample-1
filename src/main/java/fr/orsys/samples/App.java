@@ -1,5 +1,4 @@
 package fr.orsys.samples;
-import java.util.logging.Logger;
 
 /**
  * Hello world!
@@ -7,9 +6,8 @@ import java.util.logging.Logger;
  */
 public class App 
 {
-    private static final Logger LOGGER = Logger.getLogger(App.class.getName());
     public static void main( String[] args )
     {
-        logger.log( "Hello World!" );
+        System.out.println( "Hello World!" );
     }
 }
