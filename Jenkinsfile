@@ -27,6 +27,16 @@ node () {
 			} 
  		} 
 	}
+	stage ('App-IC - Deploy') {
+ 			// Maven build step
+	withMaven(maven: 'maven_3.5.4') { 
+ 			if(isUnix()) {
+ 				sh "mvn clean deploy " 
+			} else { 
+ 				bat "mvn clean deploy " 
+			} 
+ 		} 
+	}
 	
 	stage ('App-IC - Post build actions') {
 /*
