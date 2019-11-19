@@ -78,6 +78,12 @@
     </pluginManagement>
   </build>
   
+  <pluginRepositories>
+    <pluginRepository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
+      </pluginRepository>
+  </pluginRepositories> 
   <repositories>
     <repository>
       <id>maven-group</id>
